@@ -1,0 +1,16 @@
+CODE_OF_CONDUCT.md
+.vs/
+README.md         
+__pycache__/      
+conv.py           
+dice.png          
+images/           
+mnist_train/      
+model1/           
+pytorch_run.py    
+pytorch_run_old.py
+requirements.txt  
+runs-tmp/         
+runs/             
+test.py 
+LICENSE   

@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{18ee469a-ea00-44d5-aa12-05da05c1ee75}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>train.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId>CondaEnv|CondaEnv|unet</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="dice.png" />
+    <Content Include="images\att-r2u.png" />
+    <Content Include="images\att-unet.png" />
+    <Content Include="images\filt1.png" />
+    <Content Include="images\in1.png" />
+    <Content Include="images\in2.png" />
+    <Content Include="images\l2.png" />
+    <Content Include="images\nested.jpg" />
+    <Content Include="images\r2unet.png" />
+    <Content Include="images\tensorb.png" />
+    <Content Include="images\unet1.png" />
+    <Content Include="requirements.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="2d_from_3d.py" />
+    <Compile Include="conv.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CreateFloder.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data_Loader.py" />
+    <Compile Include="losses.py" />
+    <Compile Include="Metrics.py" />
+    <Compile Include="Models.py" />
+    <Compile Include="ploting.py" />
+    <Compile Include="pytorch_run.py" />
+    <Compile Include="pytorch_run_old.py" />
+    <Compile Include="test.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="train.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="images" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="CondaEnv|CondaEnv|unet" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>
